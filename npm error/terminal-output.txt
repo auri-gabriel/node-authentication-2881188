@@ -1,0 +1,45 @@
+npm ERR! code 1
+npm ERR! path /home/aurigabrielcastrodemelo/Learning/Node.js/node-authentication-2881188/todolist/node_modules/node-sass
+npm ERR! command failed
+npm ERR! command sh -c /tmp/postinstall66329442.sh
+npm ERR! Building: /usr/bin/node /home/aurigabrielcastrodemelo/Learning/Node.js/node-authentication-2881188/todolist/node_modules/node-gyp/bin/node-gyp.js rebuild --verbose --libsass_ext= --libsass_cflags= --libsass_ldflags= --libsass_library=
+npm ERR! gyp info it worked if it ends with ok
+npm ERR! gyp verb cli [
+npm ERR! gyp verb cli   '/usr/bin/node',
+npm ERR! gyp verb cli   '/home/aurigabrielcastrodemelo/Learning/Node.js/node-authentication-2881188/todolist/node_modules/node-gyp/bin/node-gyp.js',
+npm ERR! gyp verb cli   'rebuild',
+npm ERR! gyp verb cli   '--verbose',
+npm ERR! gyp verb cli   '--libsass_ext=',
+npm ERR! gyp verb cli   '--libsass_cflags=',
+npm ERR! gyp verb cli   '--libsass_ldflags=',
+npm ERR! gyp verb cli   '--libsass_library='
+npm ERR! gyp verb cli ]
+npm ERR! gyp info using node-gyp@3.8.0
+npm ERR! gyp info using node@18.1.0 | linux | x64
+npm ERR! gyp verb command rebuild []
+npm ERR! gyp verb command clean []
+npm ERR! gyp verb clean removing "build" directory
+npm ERR! gyp verb command configure []
+npm ERR! gyp verb check python checking for Python executable "/usr/bin/python3" in the PATH
+npm ERR! gyp verb `which` succeeded /usr/bin/python3 /usr/bin/python3
+npm ERR! gyp ERR! configure error 
+npm ERR! gyp ERR! stack Error: Command failed: /usr/bin/python3 -c import sys; print "%s.%s.%s" % sys.version_info[:3];
+npm ERR! gyp ERR! stack   File "<string>", line 1
+npm ERR! gyp ERR! stack     import sys; print "%s.%s.%s" % sys.version_info[:3];
+npm ERR! gyp ERR! stack                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+npm ERR! gyp ERR! stack SyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?
+npm ERR! gyp ERR! stack 
+npm ERR! gyp ERR! stack     at ChildProcess.exithandler (node:child_process:387:12)
+npm ERR! gyp ERR! stack     at ChildProcess.emit (node:events:527:28)
+npm ERR! gyp ERR! stack     at maybeClose (node:internal/child_process:1090:16)
+npm ERR! gyp ERR! stack     at ChildProcess._handle.onexit (node:internal/child_process:302:5)
+npm ERR! gyp ERR! System Linux 5.18.18-200.fc36.x86_64
+npm ERR! gyp ERR! command "/usr/bin/node" "/home/aurigabrielcastrodemelo/Learning/Node.js/node-authentication-2881188/todolist/node_modules/node-gyp/bin/node-gyp.js" "rebuild" "--verbose" "--libsass_ext=" "--libsass_cflags=" "--libsass_ldflags=" "--libsass_library="
+npm ERR! gyp ERR! cwd /home/aurigabrielcastrodemelo/Learning/Node.js/node-authentication-2881188/todolist/node_modules/node-sass
+npm ERR! gyp ERR! node -v v18.1.0
+npm ERR! gyp ERR! node-gyp -v v3.8.0
+npm ERR! gyp ERR! not ok 
+npm ERR! Build failed with error code: 1
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/aurigabrielcastrodemelo/.npm/_logs/2022-08-24T06_01_41_092Z-debug-0.log
