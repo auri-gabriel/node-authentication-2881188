@@ -42,7 +42,7 @@ module.exports = (config) => {
           }
           return done(null, user);
         } catch (err) {
-          done(err);
+          return done(err);
         }
       }
     )
@@ -56,7 +56,7 @@ module.exports = (config) => {
       const user = await UserService.findById(id);
       return done(null, user);
     } catch (err) {
-      done(err);
+      return done(err);
     }
   });
   return passport;
