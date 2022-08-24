@@ -64,7 +64,7 @@ module.exports = (config) => {
   app.use(express.urlencoded({ extended: false }));
   app.use(cookieParser());
   app.use(passport.initialize());
-  app.set(passport.session());
+  app.use(passport.session());
 
   /**
    * @todo: Implement a middleware that restores the user from the database if `userId` is present on the session
