@@ -59,7 +59,7 @@ module.exports = () => {
        */
 
       req.session.userId = user.id;
-      req.session.messsages.push({
+      req.session.messages.push({
         text: 'You are now logged in',
         type: 'success',
       });
@@ -75,7 +75,7 @@ module.exports = () => {
    */
   router.get('/logout', (req, res) => {
     req.session.userId = null;
-    req.session.messsages.push({
+    req.session.messages.push({
       text: 'You are now logged out',
       type: 'info',
     });
