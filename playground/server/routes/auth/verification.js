@@ -14,7 +14,21 @@ module.exports = () => {
       /**
        * @todo: Validate verification credentials and verify if valid
        */
-      return next('Not implemented!');
+      const user = await UserService.findById(req.params.userId);
+      if (!user || user.verificationToken !== req.params.token) {
+        req.session.messages.push({
+          text: 'Invalid credentials',
+          type: 'danger',
+        });
+      } else {
+        user.verified = true;
+        await user.save();
+        req.session.messages.push({
+          text: 'You are now verified!',
+          type: 'success',
+        });
+      }
+      return res.redirect('/');
     } catch (err) {
       return next(err);
     }
