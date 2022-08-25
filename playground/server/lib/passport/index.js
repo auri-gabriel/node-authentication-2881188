@@ -22,7 +22,7 @@ module.exports = (config) => {
           const user = await UserService.findByUsername(req.body.username);
 
           if (!user) {
-            req.session.messsages.push({
+            req.session.messages.push({
               text: 'Invalid username or password',
               type: 'danger',
             });
@@ -38,7 +38,7 @@ module.exports = (config) => {
           const isValid = await user.comparePassword(req.body.password);
 
           if (!isValid) {
-            req.session.messsages.push({
+            req.session.messages.push({
               text: 'Invalid username or password',
               type: 'danger',
             });
