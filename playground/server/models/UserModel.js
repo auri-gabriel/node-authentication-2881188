@@ -74,8 +74,8 @@ userSchema.pre('save', function preSave(next) {
   return next();
 });
 
-userSchema.methods.comparePassword = async function comparePassword(cadidate) {
-  return bcrypt.compare(cadidate, this.password);
+userSchema.methods.comparePassword = async function comparePassword(candidate) {
+  return bcrypt.compare(candidate, this.password);
 };
 
 // We export the model `User` from the `UserSchema`
