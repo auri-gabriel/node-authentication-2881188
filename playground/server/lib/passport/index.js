@@ -75,7 +75,7 @@ module.exports = (config) => {
         clientID: config.GITHUB_CLIENT_ID,
         clientSecret: config.GITHUB_CLIENT_SECRET,
         scope: ['user:email'],
-        callbackURL: 'htpp://127.0.0.1:/auth/github/callback',
+        callbackURL: 'http://localhost:3000/auth/github/callback',
         passReqToCallback: true,
       },
       async (req, accessToken, refreshToken, profile, done) => {
